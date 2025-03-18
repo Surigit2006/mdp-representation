@@ -1,38 +1,45 @@
 # MDP REPRESENTATION
 
 ## AIM:
-The aim of this experiment is to create a Markov Decision Process (MDP) representation and implement it in Python to model the decision-making process in optimize the movement of a warehouse robot .
+The aim of this experiment is to create a Markov Decision Process (MDP) representation and implement it in Python to model the decision-making process to wheater to fish or npt
 ## PROBLEM STATEMENT:
+Whether to fish salmons this year
 
 ### Problem Description
-Design an RL agent to optimize the movement of a warehouse robot to efficiently pick up and deliver items while avoiding obstacles, minimizing time, and conserving energy.
+We need to decide what proportion of salmons to catch in a year in a specific area maximizing the longer term return. Each salmon generates a fixed amount of dollar. But if a large proportion of salmons are caught then the yield of the next year will be lower. We need to find the optimum portion of salmons to catch to maximize the return over a long time period.
 
 ### State Space
-![image](https://github.com/user-attachments/assets/fd1ff3f6-5c1b-41b1-bda1-d068e0f75520)
+Empty -> no salmons are available; 
+low -> available number of salmons are below a certain threshold t1; 
+medium -> available number of salmons are between t1and t2; 
+high -> available number of salmons are more than t2
 
 
 
 ### Sample State
-![image](https://github.com/user-attachments/assets/6285bd9d-68e3-431b-930a-6c6863d73f86)
+low -> available number of salmons are below a certain threshold t1; 
 
 
 
 ### Action Space
-![image](https://github.com/user-attachments/assets/4d21bd0b-612f-49a9-84b2-9e176e42bdaa)
+ fish and not_to_fish
+ Fish means catching certain proportions of salmon. 
+ For the state empty the only possible action is not_to_fish.
 
 
 
 ### Sample Action
 
-![image](https://github.com/user-attachments/assets/ac4002b3-b2b2-45c4-8d10-07bc7540c766)
+fish
 
 ### Reward Function
-![image](https://github.com/user-attachments/assets/fb02cffa-8b4e-484e-bc54-f1587b4fb392)
+Fishing at certain state generates rewards, let’s assume the rewards of fishing at state low, medium and high are $5K, $50K and $100k respectively. If an action takes to empty state then the reward is very low -$200K as it require re-breeding new salmons which takes time and money.
 
 
 
 ### Graphical Representation
-![image](https://github.com/user-attachments/assets/bb66f936-2ea3-4df6-b6d4-42abaf940312)
+![image](https://github.com/user-attachments/assets/0d84ec59-bd65-4d32-a41a-4a1370a176fd)
+
 
 
 
