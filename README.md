@@ -55,38 +55,38 @@ Fishing at certain state generates rewards, let’s assume the rewards of fishin
 
 
 ## PYTHON REPRESENTATION:
-
+```
 mdp={
     
     1:
-     {
-    0:[(1.0,2,0.0,True)],
-    
-    
-
-    2:
-     {
-       0:[(0.75,3,0.0,True)],
-       1:[(0.25,1,1.0,True)],
-       
-    
-    3:
-     {
-       0:[(0.50,4,0.0,True)],
-       1:[(0.50,2,1.0,True)],
-      
-    
-    4:
-     {
-       0:[(0.2,4,0.0,True)],
-       1:[(0.8,3,1.0,True)],
-       }
+ {
+0:[(1.0,2,0.0,True)],
 
 
+
+2:
+ {
+   0:[(0.7,3,0.0,True)],[(0.3,2,0.0.True)]
+   1:[(0.75,1,1.0,True)],[(0.25,2,0.0,True)]
+   
+
+3:
+ {
+   0:[(0.75,4,0.0,True)],[(0.25,3,0.0,True)]
+   1:[(0.75,2,1.0,True)],[0.25,3,0.0,True)]
+  
+
+4:
+ {
+   0:[(0.95,4,0.0,True)],[(0.05,3,0.0,True)]
+   1:[(0.6,3,0.0,True)],[(0.6,4,1.0,True)]
+   }
+```
 ## OUTPUT:
 
 
-![Screenshot 2025-03-19 111434](https://github.com/user-attachments/assets/935fdf32-20d6-44aa-bb8d-12b2656d60fb)
+![image](https://github.com/user-attachments/assets/63234399-2284-429e-a0cc-5a78f67c5260)
+
 
 
 
